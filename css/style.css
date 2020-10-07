@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+.container {
+  padding: 5rem 0;
+  margin: 0 auto;
+  max-width: 100rem;
+  display: grid; }
+
+.teams {
+  margin-bottom: 2.5rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: space-between; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem; }
+
+.card {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-template-rows: 2 span 2;
+  gap: .5rem; }
+  .card__img {
+    width: 25rem; }
+  .card__role {
+    writing-mode: vertical-rl;
+    text-orientation: mixed; }
