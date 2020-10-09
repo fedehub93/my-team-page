@@ -9,30 +9,79 @@ html {
   font-size: 62.5%;
   box-sizing: border-box; }
 
+.heading-1 {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 3.6rem; }
+
+.heading-2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-transform: uppercase; }
+
+.card {
+  /*
+      &__figure--bottom,
+      &__role--bottom {
+          grid-row: 2 / 3;
+      }
+      */ }
+  .card {
+    display: grid;
+    grid-template-columns: 25rem min-content;
+    grid-template-rows: 10rem min-content; }
+  .card__figure {
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    height: 40rem; }
+  .card__img {
+    width: 100%; }
+  .card__role {
+    grid-row: 1 / 3;
+    font-family: "PT Serif", serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: mixed; }
+  @media only screen and (max-width: 786px) {
+    .card:nth-child(2) > *,
+    .card:nth-child(4) > *,
+    .card:nth-child(6) > * {
+      grid-row: 2 / 3; } }
+  @media only screen and (min-width: 787px) {
+    .card:nth-child(2) > *,
+    .card:nth-child(5) > * {
+      grid-row: 2 / 3; } }
+  .card__name {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600; }
+
 .container {
   padding: 5rem 0;
   margin: 0 auto;
   max-width: 100rem;
   display: grid; }
+  @media only screen and (max-width: 1000px) {
+    .container {
+      padding: 0 2rem; } }
 
-.teams {
-  margin-bottom: 2.5rem;
+.team {
+  margin-bottom: 5rem;
   display: grid;
-  grid-template-columns: 50% 50%;
-  justify-items: space-between; }
+  grid-template-columns: 50% 50%; }
+  .team__info-title {
+    margin-bottom: 1rem; }
+  .team__info-description {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400; }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 2rem; }
-
-.card {
-  display: grid;
-  grid-template-columns: min-content min-content;
-  grid-template-rows: 2 span 2;
-  gap: .5rem; }
-  .card__img {
-    width: 25rem; }
-  .card__role {
-    writing-mode: vertical-rl;
-    text-orientation: mixed; }
+  column-gap: 2rem;
+  justify-items: center; }

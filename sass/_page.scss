@@ -1,37 +1,34 @@
 .container {
-    padding: 5rem 0;
-    margin: 0 auto;
-    max-width: 100rem;
+  padding: 5rem 0;
+  margin: 0 auto;
+  max-width: 100rem;
+  @media only screen and (max-width: 1000px) {
+      padding: 0 2rem;
+  }
 
-    display: grid;
+  display: grid;
 }
 
-.teams {
-    margin-bottom: 2.5rem;
-    
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-items: space-between;
+.team {
+  margin-bottom: 5rem;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  &__info-title {
+    margin-bottom: 1rem;
+  }
+
+  &__info-description {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 2rem;
-}
-
-.card {
-    display: grid;
-    grid-template-columns: min-content min-content;
-    grid-template-rows: 2 span 2;
-    gap: .5rem;
-
-    &__img {
-        width: 25rem;
-    }
-
-    &__role {
-        writing-mode: vertical-rl;
-        text-orientation: mixed;
-    }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  column-gap: 2rem;
+  justify-items: center;
 }
