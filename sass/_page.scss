@@ -3,7 +3,7 @@
   margin: 0 auto;
   max-width: 100rem;
   @media only screen and (max-width: 1000px) {
-      padding: 0 2rem;
+      padding: 5rem 2rem;
   }
 
   display: grid;
@@ -27,8 +27,22 @@
 }
 
 .cards {
+  padding: 7.5rem 0;
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   column-gap: 2rem;
   justify-items: center;
+}
+
+.footer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-align: center;
+  color:#A9A9A9;
+
+  p {
+    margin-bottom: 2rem;
+  }
 }
