@@ -16,6 +16,7 @@
   
     &__img {
       width: 100%;
+      height: auto;
       margin-bottom: 1rem;
     }
   
@@ -38,7 +39,7 @@
     &:nth-child(2) > *,
     &:nth-child(4) > *,
     &:nth-child(6) > * {
-      @media only screen and (min-width: 577px) and (max-width: 846px) {
+      @media only screen and (min-width: 34.94em) and (max-width: 51.75em) {
         grid-row: 2 / 3;
       }
 
@@ -49,7 +50,7 @@
   
     &:nth-child(2) > *,
     &:nth-child(5) > * {
-      @media only screen and (min-width: 847px) {
+      @media only screen and (min-width: 51.75em) {
         grid-row: 2 / 3;
       }
     }
