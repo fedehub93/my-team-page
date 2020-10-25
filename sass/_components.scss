@@ -36,10 +36,8 @@
       font-weight: 600;
     }
   
-    &:nth-child(2) > *,
-    &:nth-child(4) > *,
-    &:nth-child(6) > * {
-      @media only screen and (min-width: 34.94em) and (max-width: 51.75em) {
+    &:nth-child(2n) > * {
+      @media only screen and (min-width: 34.94em) and (max-width: 52.90em) {
         grid-row: 2 / 3;
       }
 
@@ -48,9 +46,8 @@
       // }
     }
   
-    &:nth-child(2) > *,
-    &:nth-child(5) > * {
-      @media only screen and (min-width: 51.75em) {
+    &:nth-child(3n + 2) > * {
+      @media only screen and (min-width: 52.89em) {
         grid-row: 2 / 3;
       }
     }

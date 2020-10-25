@@ -46,14 +46,11 @@ html {
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
     font-weight: 600; }
-  @media only screen and (min-width: 34.94em) and (max-width: 51.75em) {
-    .card:nth-child(2) > *,
-    .card:nth-child(4) > *,
-    .card:nth-child(6) > * {
+  @media only screen and (min-width: 34.94em) and (max-width: 52.9em) {
+    .card:nth-child(2n) > * {
       grid-row: 2 / 3; } }
-  @media only screen and (min-width: 51.75em) {
-    .card:nth-child(2) > *,
-    .card:nth-child(5) > * {
+  @media only screen and (min-width: 52.89em) {
+    .card:nth-child(3n + 2) > * {
       grid-row: 2 / 3; } }
 
 .container {
@@ -83,7 +80,7 @@ html {
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   column-gap: 2rem;
   justify-items: center; }
-  @media only screen and (max-width: 51.75em) {
+  @media only screen and (max-width: 52.9em) {
     .cards {
       padding: 1rem 0; } }
 
